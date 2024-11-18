@@ -1,22 +1,26 @@
-opencv-python
-pillow
-pandas 
+# Core Data Processing
+pandas
 numpy
-pyenchant
-levenshtein
-thefuzz
+
+# HTTP and API Libraries
+requests
 python-dotenv
 groq
-json_repair
 openai
-google
-google.cloud
-google.api_core
-google.cloud.vision
+google-cloud-aiplatform
 vertexai
-streamlit
-pyspellchecker
-transformers
-torch
+
+# Image Processing
+Pillow
+
+# Machine Learning and Analysis
+sentence-transformers
 scikit-learn
-ipywidgets
+seaborn
+matplotlib
+
+# Progress Bars
+tqdm
+
+# File handling
+pathlib
