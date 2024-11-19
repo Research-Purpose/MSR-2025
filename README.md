@@ -65,7 +65,6 @@ Q1 examines how well the generated questions align with screenshot content:
 - All models perform better with In-Context and Chain-of-Thought compared to Few-Shot Learning
 
 Q2 compares LLM questions against original questions:
-- Generally lower scores across all models compared to Q1
 - GPT-4 slightly edges out other models with In-Context Learning (0.43*)
 - Few-Shot Learning continues to show the lowest performance across all models
 
