@@ -13,9 +13,14 @@ This repository contains code and data for analyzing LLM-generated questions and
 
 ### Data Directory
 - **Data/**
-  - `filtered_data_matching.csv`: Master file containing all post IDs used in study
   - `images/`: Contains screenshot images used for analysis
+  - `GPT-4o/`: Contains all the responses and analysis for GPT responses
+  - `Gemini/`: Contains all the responses and analysis for Gemini responses
+  - `Llama-3.2/`: Contains all the responses and analysis for Llama responses
   - Additional data files for preprocessing and analysis
+  - `filtered_data_matching.csv`: Master file containing all post IDs used in study
+  - `Data.csv`: Contains all the posts before filtering
+  - `selected_row_ids.txt`: Manually filtered ids which contains images of code or IDEs
 - `.gitignore`: Specifies which files Git should ignore
 
 ## Setup and Execution
