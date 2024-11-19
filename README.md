@@ -8,7 +8,7 @@ This repository contains code and data for analyzing LLM-generated questions and
 - `Final_Code.ipynb`: Primary notebook containing main analysis implementation and execution code
 - `Dataset_work.ipynb`: Preprocessing notebook for initial data preparation
 - `final_data_selected.ipynb`: Notebook for data selection and filtering
-- `app.py`: Supporting utility functions and helper code
+- `app.py`: Streamlit app for visualization
 - `requirements.txt`: List of project dependencies
 
 ### Data Directory
