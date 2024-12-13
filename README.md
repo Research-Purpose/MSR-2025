@@ -81,3 +81,15 @@ Q2 compares LLM questions against original questions:
 | Q2: Relevance of LLM question vs original | In-Context Learning | 0.19 | 0.41 | 0.43* |
 | | Chain-of-Thought | 0.17 | 0.39 | 0.40 |
 | | Few-Shot Learning | 0.04 | 0.34 | 0.39 |
+
+
+## Some Example Analysis
+
+You can explore interactive visualizations and detailed analysis of our results through our Streamlit application:
+[MSR-2025 Analysis Dashboard](https://example-analysis-msr2025.streamlit.app/)
+
+The dashboard provides:
+- Interactive visualization of similarity scores across different LLMs
+- Detailed comparison of prompting techniques
+- Sample question pairs showing original and generated questions
+- Performance metrics breakdown by question components
