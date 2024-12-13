@@ -24,3 +24,6 @@ tqdm
 
 # File handling
 pathlib
+
+# Streamlit
+streamlit
