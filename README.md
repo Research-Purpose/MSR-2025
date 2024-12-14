@@ -101,6 +101,27 @@ You can also look at analysis of a few examples where GPT, the best performing m
 This dashboard contains:
 - Some examples of LLM response with human analysis against original question
 - Some examples where LLM does a good job
-- Some examples where LLM performs poorly 
+- Some examples where LLM performs poorly
 
+
+## Additional Metric Analysis
+
+### BLEU and ROUGE Score Analysis
+
+We performed additional evaluation using BLEU and ROUGE metrics to assess the quality of generated questions against the original ones. The results are shown below:
+
+| Model  | Approach   | BLEU    | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|--------|------------|---------|---------|---------|---------|
+| Gemini | zero_shot  | 0.0704  | 0.3138  | 0.1058  | 0.1862  |
+| Gemini | few_shot   | 0.0252  | 0.2708  | 0.0629  | 0.1540  |
+| Gemini | cot        | 0.0771  | 0.3303  | 0.1113  | 0.1929  |
+| GPT-4  | zero_shot  | 0.0712  | 0.3148  | 0.1000  | 0.1803  |
+| GPT-4  | few_shot   | 0.0640  | 0.3044  | 0.1002  | 0.1870  |
+| GPT-4  | cot        | 0.0746  | 0.3250  | 0.1080  | 0.1944  |
+| LLaMA  | zero_shot  | 0.0331  | 0.2390  | 0.0499  | 0.1266  |
+| LLaMA  | few_shot   | 0.0072  | 0.1903  | 0.0214  | 0.1004  |
+| LLaMA  | cot        | 0.0254  | 0.2376  | 0.0426  | 0.1246  |
+
+Key observations:
+Low scores were expected because we are not actually extracting the exact questions but rather generating text. For the same purpose, calculating semantic similarity makes to most sense as it calculates how close the original text and machine generated text are to each other.
 
