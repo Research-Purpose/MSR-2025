@@ -108,7 +108,11 @@ This dashboard contains:
 
 ### BLEU and ROUGE Score Analysis
 
-We performed additional evaluation using BLEU and ROUGE metrics to assess the quality of generated questions against the original ones. The results are shown below:
+We selected embedding similarity as the primary evaluation metric because it captures semantic meaning rather than matching word like BLEU or ROUGE. These traditional metrics are NOT suitable for open-ended question generation since they rely heavily on exact n-gram matches and struggle with valid paraphrases or semantically equivalent questions, which is not suitable for open-ended question generation [R1, R2].
+However, these measures are provided to provide more in depth view to the reader.  As expected, they show significant differences since exact wording is neither required nor desirable (e.g., variations in developers' communication styles and English fluency).
+
+[R1] Kamalloo, E., Dziri, N., Clarke, C. L., & Rafiei, D. (2023). Evaluating open-domain question answering in the era of large language models. arXiv preprint arXiv:2305.06984.
+[R2]  Bhat, Meghana Moorthy, Rui Meng, Ye Liu, Yingbo Zhou, and Semih Yavuz. "Investigating Answerability of LLMs for Long-Form Question Answering." arXiv preprint arXiv:2309.08210 (2023).
 
 | Model  | Approach   | BLEU    | ROUGE-1 | ROUGE-2 | ROUGE-L |
 |--------|------------|---------|---------|---------|---------|
@@ -123,5 +127,5 @@ We performed additional evaluation using BLEU and ROUGE metrics to assess the qu
 | LLaMA  | cot        | 0.0254  | 0.2376  | 0.0426  | 0.1246  |
 
 Key observations:
-Low scores were expected because we are not actually extracting the exact questions but rather generating text. For the same purpose, calculating semantic similarity makes to most sense as it calculates how close the original text and machine generated text are to each other.
+Low scores were expected because we are not actually extracting the exact questions but rather generating questions. For the same purpose, calculating semantic similarity makes the most sense as it calculates how close the original text and machine generated text are to each other.
 
